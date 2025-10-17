@@ -1,0 +1,234 @@
+:root{
+    --title-size: 3.6rem;
+    --title-color: rgba(0, 0, 0, .8);
+    --paragraph-size: 2rem;
+    --font: "Lora", serif;
+    --font2: "Montserrat", sans-serif;
+    --background-color: rgba(0, 0, 0, .6);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    
+}
+
+h1{
+    font-family: var(--font2);
+    font-weight: 400; 
+}
+
+.menu-container{
+    background-color: rgba(255, 255, 255, .4);
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.menu-nav{
+    padding: 3rem;
+    width: 50%;
+}
+
+.logo{
+   width: 40%;
+   max-width: 400px;
+}
+
+.fa-instagram{
+    font-size: 3rem;
+}
+
+.menu-list {
+    gap: 4rem;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    list-style-type: none;
+    letter-spacing: .1rem;
+    margin-right: 5rem;
+
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: rgb(154, 112, 15);
+    padding: 1.2rem;
+}
+
+.menu-item{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover{
+    transform: scale(1.3)
+}
+
+.main-content{
+    width: 100vw;
+
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    gap: 2rem;
+    background-image: url(/assets/rosto-mulher.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.main-title{
+    font-size: var(--title-size);
+    color: var(--title-color);
+    max-width: 35%;
+}
+
+.nome-clinica{
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-weight: 200;
+    letter-spacing: 1.2rem;
+}
+
+.avaliacao-btn a{
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 2rem;
+    font-size: 2.4rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4);
+    color: rgba(0, 0, 0, .6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .5); 
+    text-decoration: none;
+    
+    transition: background-color .5s ease-out, color 1s ease-out;; 
+  
+}
+
+.avaliacao-btn a:hover{
+    color: antiquewhite;
+    background-color: var(--background-color)
+}
+
+.service-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.procedures-cards img{
+    max-width: 16rem;
+    height: auto;
+    transform: scale(1);
+    transition: transform .3s ease-in-out ;
+}
+
+.procedures-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 10rem 0;
+    padding: 1rem;
+    border: 3px solid rgb(183, 108, 9);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+.procedures-cards img:hover{
+    transform: scale(1.2);
+}
+
+.map-container{
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 10rem; 
+}
+
+.rodape{
+    background-color: var(--background-color) ;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+
+
+/* formatação para celular */
+
+@media (max-width: 768px){
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        position: sticky;
+        z-index: 1;
+    }
+
+    .menu-nav{
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.8rem;
+    }
+
+    .logo{
+        width: 80%;
+        max-width: 250px;
+    }
+
+
+    .main-title{
+        max-width: 90%;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .avaliacao-btn a{
+        font-size: 2rem;
+    }
+
+    .banner{
+        background-image: none;
+        background-color: rgba(179, 157, 125, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .procedures-cards{
+        gap: 3rem;
+        margin: 4rem 0;
+        border: none;   
+    }
+}
+
