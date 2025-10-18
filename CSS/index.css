@@ -36,6 +36,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 1;
+    background-color: rgba(239, 229, 211, 0.5)
 }
 
 .menu-nav{
@@ -84,22 +85,33 @@ h1{
 
 }
 
-.banner{
+.main-title-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem;
-    gap: 2rem;
-    background-image: url(/assets/rosto-mulher.jpg);
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;  
+    align-items: center;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, #9f6132, #67482c, #b58763);
+}
+
+.main-image-container{
+    max-width: 40%;
+    
+}
+
+.main-image-container img{
+    width: 90%;
+    max-width: 800px;
 }
 
 .main-title{
     font-size: var(--title-size);
-    color: var(--title-color);
-    max-width: 35%;
+    color: antiquewhite;
+    max-width: 40%;
 }
 
 .nome-clinica{
@@ -109,7 +121,7 @@ h1{
     letter-spacing: 1.2rem;
 }
 
-.avaliacao-btn a{
+.avaliacao-btn{
     border-radius: 1rem;
     width: fit-content;
     padding: 2rem;
@@ -119,12 +131,10 @@ h1{
     color: rgba(0, 0, 0, .6);
     box-shadow: 0 4px 12px rgba(0, 0, 0, .5); 
     text-decoration: none;
-    
     transition: background-color .5s ease-out, color 1s ease-out;; 
-  
 }
 
-.avaliacao-btn a:hover{
+.avaliacao-btn:hover{
     color: antiquewhite;
     background-color: var(--background-color)
 }
@@ -154,7 +164,6 @@ h1{
     overflow: hidden;
 }
 
-
 .procedures-cards img:hover{
     transform: scale(1.2);
 }
@@ -172,7 +181,6 @@ h1{
     text-align: center;
     padding: 1rem;
 }
-
 
 
 /* formatação para celular */
@@ -203,25 +211,34 @@ h1{
         max-width: 250px;
     }
 
-
     .main-title{
-        max-width: 90%;
-        font-size: 2.4rem;
+        min-width: 100%;
+        font-size: 1.6rem;
         text-align: center;
     }
 
-    .avaliacao-btn a{
+    .main-title-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 1rem 0 4rem;
+
+    }
+
+    .avaliacao-btn{
+        padding: 1rem;
+        color: antiquewhite;
         font-size: 2rem;
+        width: 24rem;
     }
 
     .banner{
         background-image: none;
-        background-color: rgba(179, 157, 125, 0.4);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        background: radial-gradient(circle, #9f6132, #67482c, #b58763);    
+    }
+
+    .main-image-container{
+        display: none;
     }
     
     .procedures-cards{
