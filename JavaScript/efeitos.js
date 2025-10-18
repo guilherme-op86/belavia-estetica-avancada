@@ -13,7 +13,7 @@ window.addEventListener("scroll", ()=>{
     const imageTop = daniImage.getBoundingClientRect().top
 
     //efeitos da Samira
-    const triggerPoint2 = window.innerHeight/.9
+    const triggerPoint2 = window.innerHeight/1.05
     const textTop2 = textSamira.getBoundingClientRect().top
     const imageTop2 = samiraImage.getBoundingClientRect().top
 
