@@ -4,6 +4,7 @@
     --paragraph-size: 2rem;
     --font: "Lora", serif;
     --font2: "Montserrat", sans-serif;
+    --background-color: rgba(0, 0, 0, .6);
 }
 
 html{
@@ -176,6 +177,16 @@ body{
     opacity: 1;
 }
 
+.rodape{
+    background-color: var(--background-color) ;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* formatação para celular */
 @media(max-width: 768px){
 
     .menu-container{
