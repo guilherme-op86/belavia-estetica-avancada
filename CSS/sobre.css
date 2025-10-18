@@ -21,7 +21,7 @@ body{
     font-weight: 400;
     background-color: rgba(123, 92, 52, 0.4);
     font-size: var(--paragraph-size);
-    letter-spacing: .2rem;
+    letter-spacing: normal;
     line-height: 3rem;
 
 }
