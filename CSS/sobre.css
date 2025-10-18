@@ -222,7 +222,7 @@ body{
 
     .main-text{
         padding: 0;
-        width: 90%;
+        width: 100%;
         margin-bottom: 3rem;
     }
 
@@ -232,9 +232,11 @@ body{
     }
 
     .apresentacao-dani, .apresentacao-samira{
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         margin: auto;
+        text-align: justify;
+        hyphens: auto
     
     }
 }
